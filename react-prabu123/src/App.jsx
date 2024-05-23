@@ -1,18 +1,19 @@
-const Hello = () => {
-  return <h1>Hello,World!</h1>
-}
+const App =() =>{
 
-//Component: App
-const App = () => {
+  const handleChange=(e) =>{
+    console.log(e.target.value);
+
+  }
   return(
     <div>
-      <Hello/>
-      <Hello/>
-      <Hello/>
-      <Hello/>
+      <h1>React App</h1>
+      <input
+      type="text"
+      onchange={handleChange}
+      />
+
     </div>
   )
-  return<h1>Hello, Prabu!</h1>
 }
 
 export default App;
